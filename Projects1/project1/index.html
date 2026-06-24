@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            background-color: black;
+            /* First trick to keep div in centre 
+            position: relative;                    */
+
+            /* Second trick to keep in centre  by flexbox
+            display: flex;
+            justify-content: center;
+            align-items: center;              */
+
+            /* using grid to keep in center
+            display:grid ;
+            place-items: center;  */
+
+            /* fourth by grid 
+            display: grid;
+            justify-content: center;
+            align-items: center;         */
+
+            /* fifth flex and margin */
+            /*display: flex;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .child{
+            width: 400px;
+            height: 400px;
+            background-color: #865dff;
+            /* first
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%); */
+           
+            /* fifth */
+            margin: auto;
+            color: white;
+            text-transform: uppercase;
+            font-size: 20px;
+
+            /* to keep text in center */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="child">center text</div>
+</body>
+</html>
